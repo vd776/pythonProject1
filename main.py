@@ -213,13 +213,25 @@ Add a check to see if someone is trying to divide by zero, if so, give an approp
 # Define variables
 num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
+operation = input("Enter the operation (+, -, *, /): ")
 
 # Perform the operation
-if num2 == 0:
-    print("Invalid operation, division by 0")
+if operation == "+":
+    result = num1 + num2
+elif operation == "-":
+    result = num1 - num2
+elif operation == "*":
+    result = num1 * num2
+elif operation == "/":
+    if num2 == 0:
+      result = "Invalid operation, division by 0"
+    else:
+      result = num1 / num2
 else:
-    result = num1 / num2
-    print("Result:", result)
+    result = "Invalid operation"
+
+# Print the result
+print("Result:", result)
 
 """Exercise 8. <br />
 Make a script out of all task and put it on GitHub
