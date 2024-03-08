@@ -216,12 +216,10 @@ num2 = float(input("Enter the second number: "))
 
 # Perform the operation
 if num2 == 0:
-    result = "Invalid operation"
+    print("Invalid operation, division by 0")
 else:
     result = num1 / num2
-
-# Print the result
-print("Result:", result)
+    print("Result:", result)
 
 """Exercise 8. <br />
 Make a script out of all task and put it on GitHub
